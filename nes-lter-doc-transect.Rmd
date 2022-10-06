@@ -34,7 +34,6 @@ excel_to_template(here("nes-lter-doc-transect-info"), "nes-lter-doc-transect", r
 Generate the package and insert the parent project node into the resulting EML
 
 ```{r}
-# use a dummy package ID
 pkg_id <- "knb-lter-nes.23.1"
 
 make_eml(here(),
