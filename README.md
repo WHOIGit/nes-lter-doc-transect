@@ -1,3 +1,5 @@
-# minimal-edi-package
-Minimal EML assembly line example, including a small subset of an NES-LTER
-dataset.
+## Dissolved Organic Carbon (DOC) and Total Nitrogen (TN) from Northeast U.S. Shelf Long Term Ecological Research (NES-LTER) Transect cruises, ongoing since 2022
+
+Dissolved organic carbon and total nitrogen are measured from discrete bottle samples collected during CTD-rosette casts on [Northeast U.S. Shelf Long-Term Ecological Research (NES-LTER)](https://nes-lter.whoi.edu) Transect cruises (ongoing since 2022). Sampling frequency is approximately seasonal. Sample collection was paired with particulate organic carbon at surface, subsurface chlorophyll max, and sometimes a third depth. Samples were filtered directly from the CTD rosette and acidified in the field, then analyzed at WHOI using a Shimadzu TOC-VCSH total organic carbon analyzer with a TNM-1 module for total nitrogen. Final calculations are reported in micromolar per liter.
+
+This repository contains the [EMLassemblyline](https://github.com/EDIorg/EMLassemblyline#readme) code to produce a valid [EML](https://eml.ecoinformatics.org/) package for this data for submission to [Environmental Data Intiative repository](https://portal.edirepository.org/nis/home.jsp).
