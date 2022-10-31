@@ -1,4 +1,4 @@
-cruise,cast,niskin,date,latitude,longitude,depth,sample_type,replicate,npoc,tn,quality_flag,nearest_station,station_distance,date_analyzed,filename
+cruise,cast,niskin,date,latitude,longitude,depth,sample_type,replicate,doc,dtn,quality_flag,nearest_station,station_distance,date_analyzed,filename
 AT46,1,2,2022-02-16 18:29:56,41.1969,-70.8830,17.905,cast,a,90.8,6.1,1,L1,0.031,2022-03-03,LTER_AT45_C1_N2_DOC.16.Feb.2022_note
 AT46,1,13,2022-02-16 18:35:38,41.1966,-70.8828,2.056,cast,a,85.9,5.1,1,L1,0.043,2022-03-03,LTER_AT45_C1_N13_DOC.16.Feb.2022_note
 AT46,2,2,2022-02-17 02:32:13,40.6969,-70.8819,59.848,cast,a,81.0,7.4,1,L4,0.121,2022-03-03,LTER_AT46_C2_N2
