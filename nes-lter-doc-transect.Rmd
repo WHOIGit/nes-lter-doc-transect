@@ -37,10 +37,10 @@ Generate the package and insert the parent project node into the resulting EML
 pkg_id <- "knb-lter-nes.23.1"
 
 make_eml(here(),
-         dataset.title="Dissolved Organic Carbon (DOC) and Total Nitrogen (TN) from Northeast U.S. Shelf Long Term Ecological Research (NES-LTER) Transect cruises, ongoing since 2022",
+         dataset.title="Dissolved Organic Carbon (DOC) and Dissolved Total Nitrogen (DTN) from Northeast U.S. Shelf Long Term Ecological Research (NES-LTER) Transect cruises, ongoing since 2022",
          data.table="nes-lter-doc-transect.csv",
-         data.table.description="(placeholder)",
-         data.table.name = "(placeholder)",
+         data.table.description="DOC and DTN from discrete water column samples on NES-LTER cruises",
+         data.table.name = "nes-lter-doc-transect",
          temporal.coverage = temporal_coverage(data_table$date),
          geographic.description = "NES-LTER Transect",
          geographic.coordinates = geographic_coordinates(data_table$latitude, data_table$longitude),
