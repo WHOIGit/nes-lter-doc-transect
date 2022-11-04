@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="knb-lter-nes.23.1" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd" system="edi">
+  <access authSystem="https://pasta.edirepository.org/authentication" order="allowFirst" scope="document">
+    <allow>
+      <principal>uid=NES,o=LTER,dc=ecoinformatics,dc=org</principal>
+      <permission>all</permission>
+    </allow>
+    <allow>
+      <principal>public</principal>
+      <permission>read</permission>
+    </allow>
+  </access>
+  <dataset>
+    <title>Dissolved Organic Carbon (DOC) and Dissolved Total Nitrogen (DTN) from Northeast U.S. Shelf Long Term Ecological Research (NES-LTER) Transect cruises, ongoing since 2022</title>
+    <pubDate>2022-11-04</pubDate>
+    <abstract>
+      <para>Dissolved organic carbon and total nitrogen are measured from discrete bottle samples collected during CTD-rosette casts on Northeast U.S. Shelf Long-Term Ecological Research (NES-LTER) Transect cruises (ongoing since 2022). Sampling frequency is approximately seasonal. Sample collection is paired with particulate organic carbon at surface, subsurface chlorophyll max, and sometimes a third depth. Samples are filtered directly from the CTD rosette and acidified in the field, then analyzed at WHOI using a Shimadzu TOC-VCSH total organic carbon analyzer with a TNM-1 module for total nitrogen. Values are reported in micromoles per liter. </para>
+    </abstract>
+    <keywordSet>
+      <keyword>organic matter</keyword>
+      <keywordThesaurus>LTER Core Research Areas</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword>chemistry</keyword>
+      <keyword>seawater</keyword>
+      <keyword>dissolved organic carbon</keyword>
+      <keyword>total dissolved nitrogen</keyword>
+      <keyword>oceanography</keyword>
+      <keywordThesaurus>LTER Controlled Vocabulary</keywordThesaurus>
+    </keywordSet>
+    <keywordSet>
+      <keyword>Northeast U.S. Continental Shelf</keyword>
+      <keywordThesaurus>NOAA Large Marine Ecosystems</keywordThesaurus>
+    </keywordSet>
+    <additionalInfo>
+      <para>Special thanks to Krista Longnecker, WHOI, for analyzing all samples collected for this data package. </para>
+    </additionalInfo>
+    <intellectualRights>
+      <para>This data package is released to the "public domain" under Creative Commons CC0 1.0 "No Rights Reserved" (see: https://creativecommons.org/publicdomain/zero/1.0/). It is considered professional etiquette to provide attribution of the original work if this data package is shared in whole or by individual components. A generic citation is provided for this data package on the website https://portal.edirepository.org (herein "website") in the summary metadata page. Communication (and collaboration) with the creators of this data package is recommended to prevent duplicate research or publication. This data package (and its components) is made available "as is" and with no warranty of accuracy or fitness for use. The creators of this data package and the website shall not be liable for any damages resulting from misinterpretation or misuse of the data package or its components. Periodic updates of this data package may be available from the website. Thank you.
+</para>
+    </intellectualRights>
+    <coverage>
+      <geographicCoverage>
+        <geographicDescription>NES-LTER Transect</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-70.8997</westBoundingCoordinate>
+          <eastBoundingCoordinate>-70.5626</eastBoundingCoordinate>
+          <northBoundingCoordinate>41.3242</northBoundingCoordinate>
+          <southBoundingCoordinate>39.7726</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>2022-02-16</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>2022-08-02</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+    </coverage>
+    <maintenance>
+      <description>ongoing</description>
+    </maintenance>
+    <methods>
+      <methodStep>
+        <description>
+          <para># Equipment preparation</para>
+          <para>40ml EPA vials (Fisher part number 03-339-14A): EPA vials were rinsed with water purified using a Millipore Milli-Q lab water system (MilliQ). If the vials were previously used, sample labels were removed and vials were soaked in 2% Micro solution overnight. Vials were scrubbed if needed to remove visible particles/precipitate, rinsed with hot tap water and soaked overnight in freshly made 10% hydrochloric acid bath. Vials were rinsed again with MilliQ and covered in a clean area to dry completely. Vials were then wrapped in foil and combusted at 450 degC for at least 4 hours. </para>
+          <para>Teflon-lined septa (Thermo part number B7995-24): Used septa were discarded because they cannot be reused. Used vial locking collars were rinsed in MilliQ and dried completely in a clean, covered area. Brand new septa without any pre-cleaning were handled with clean gloves and inserted into vial collars with the Teflon lining facing into the vial (critical to avoid sample contamination).  </para>
+          <para>Final vial prep: Using gloves, vials were capped with clean, dry Teflon-lined silicone septa and locking collar. Each lid was covered with pre-combusted foil to keep clean until sample collection. Label tape was placed on vials ahead of time to decrease the amount of handling vials in the field. Sample ID labels were written in the field and placed on the lab tape so that labels could be more easily removed for re-use.</para>
+          <para>47mm Whatman Glass Microfiber Filters (GF/F) (part number 1825-047): each filter was individually wrapped in a piece of foil leaving one side unfolded for ease of access and combustion efficiency. Approximately 7 filters were combined in a consolidated foil package, leaving one side unfolded. Filters were combusted at 450 degC for at least 4 hours. After combustion, the remaining edge of the larger foil packets was folded close and packets were stored in a clean plastic reclosable bag. New filters were freshly combusted prior to each cruise. Unused combusted filters from a previous cruise were used on the following cruise, often less than 6 months later.</para>
+          <para>4N hydrochloric acid: A combusted glass graduated cylinder was used to measure MilliQ and 12N hydrochloric acid to mix 4N hydrochloric acid prior to each cruise. The 4N acid was stored in new, combusted glass vials with Teflon-lined lids. Plastic storage vials were never used. </para>
+          <para># CTD Rosette Bottle Sampling on NES-LTER cruises</para>
+          <para>Samples were collected from the water column at multiple depths using Niskin bottles on a CTD rosette system. Geographic locations sampled were the high priority NES-LTER stations, and sometimes additional stations when sampling effort was feasible. Sample depths were matched with particulate organic carbon depths (POC), which were surface, subsurface chlorophyll max (SCM), and sometimes a third depth. On AT46, our first sampling effort, the third depth was always paired with the third POC depth. On AR66B, our second sampling effort, a third or fourth depth was sometimes paired with the third POC depth and/or sometimes a dissolved inorganic carbon (DIC) sampled depth. On EN687, our third sampling effort, the third depth changed to a standardized depth of approimxately 90 meters for stations L6 through L11 (main stations deeper than 90 m). Approximately 10% replicate samples were collected on each cruise to check for sampling precision. Replicate samples were always collected from the deepest depth of the most offshore station (typically 500 m at L11) on every cruise to act as a baseline for the cruise, assuming this discrete depth will have the lowest dissolved organic carbon observed on that cruise. </para>
+          <para># Filtering Protocol</para>
+          <para>Cruise, cast, Niskin, and replicate B, when applicable, were written on cryo-labels using permanent marker and placed on label tape already wrapped on the vials.</para>
+          <para>Using nitrile gloves, a 47mm polycarbonate filter cartridge (part number 1119) and silicon tubing were retrieved from a 10% acid bath and rinsed thoroughly with MilliQ. A pre-combusted, individually wrapped GF/F filter (nominally 0.7 um) was inserted into the filter cartridge using clean, dedicated forceps. The sample vials and filter cartridge were then placed in the designated clean DOC cooler and brought out on deck for sampling.</para>
+          <para>DOC was the first sample collected from the Niskins, which were sampled deepest to shallowest (least to most concentrated). An integrity check was performed on each Niskin prior to sampling to confirm the Niskin was properly sealed and air-tight. The silicon tubing was connected to the stopcock and the filter cartridge was purged of air, filled with water, and flushed with sample water for 20-30 seconds. The vial and lid were then rinsed three times and the vial was filled approximately ¾ of the way full. Once all depths were sampled at the rosette, samples were immediately brought into lab for acidification.</para>
+          <para>A clean, DOC-dedicated pipette (never used with contaminants such as organic solutions), was used to add 60 microliters of 4N hydrochloric acid to each vial. A new, sterile pipette tip was used for each station. The same tip was used to acidify all samples as long as the tip was not submerged in the sample or contaminated by contacting any other surface. Acidified vials were gently inverted a few times to ensure acid was well mixed and then stored in a clean, secured location at room temperature.&#13;
+Used GF/Fs were discarded and the filter cartridge was disassembled and placed into a 10% acid bath until its next use. The filter cartridge was always assembled close in time to sample collection (not prepared hours ahead of time) to avoid tearing of the filter or possible contamination. </para>
+          <para>Blanks: approximately 2-3 MilliQ blanks were typically collected for each cruise and acidified with the acid used on that cruise. Possible blank sources include the ship's MilliQ system during the cruise and shore-side MilliQ used when sample supplies were being prepared.</para>
+          <para># Sample Analysis</para>
+          <para>Samples remained covered and were stored at ambient room temperature in the lab until they were submitted to the Kujawinski TOC lab for analysis where they were refrigerated at approximately 4 degC. To obtain the concentration of total organic carbon (TOC) and total nitrogen (TN), samples were analyzed with a Shimadzu TOC-LCPH total organic carbon analyzer coupled to a TNM-L analyzer. Blanks (MilliQ) and standard curves with potassium hydrogen phthalate and potassium nitrate were interspersed into the sample runs. The coefficient of variability between replicate injections was &lt;2%. Comparisons to standards provided by Prof. D. Hansell (University of Miami) were made daily.</para>
+          <para>Data were received from the facility as Non Purgeable Organic Carbon (NPOC) and Total Nitrogen (TN). Because samples were pre-filtered through GF/F filters, NPOC and TN are operationally equivalent to dissolved organic carbon (DOC) and dissolved total nitrogen (DTN) and identified as DOC and DTN in this package.</para>
+          <para># Data Cleaning and Assembly</para>
+          <para>Sample metadata were combined with lab results by concatenating cruises called from the REST API of the NES-LTER data system. Nearest station is based on a cruise-specific station list: NES-LTER standard stations L1 to L11. Further documentation can be found on GitHub, at https://github.com/WHOIGit/nes-lter-doc-transect. </para>
+          <para># Quality Assurance</para>
+          <para>We assured that the geographic and temporal coverage of the clean data table were within expected ranges. The carbon to nitrogen ratio was examined. Data of good quality, flagged as 1, are included in the table.&#13;
+</para>
+        </description>
+      </methodStep>
+    </methods>
+    <project>
+      <title>Northeast U.S. Shelf LTER</title>
+      <personnel>
+        <individualName>
+          <givenName>Heidi</givenName>
+          <surName>Sosik</surName>
+        </individualName>
+        <electronicMailAddress>hsosik@whoi.edu</electronicMailAddress>
+        <userId directory="https://orcid.org">https://orcid.org/0000-0002-4591-2842</userId>
+        <role>Principal Investigator</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <givenName>Stace</givenName>
+          <surName>Beaulieu</surName>
+        </individualName>
+        <electronicMailAddress>sbeaulieu@whoi.edu</electronicMailAddress>
+        <userId directory="https://orcid.org">https://orcid.org/0000-0002-2609-5453</userId>
+        <role>Co-Principal Investigator</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <givenName>Changsheng</givenName>
+          <surName>Chen</surName>
+        </individualName>
+        <electronicMailAddress>c1chen@umassd.edu</electronicMailAddress>
+        <userId directory="https://orcid.org">https://orcid.org/0000-0001-8715-6101</userId>
+        <role>Co-Principal Investigator</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <givenName>Rubao</givenName>
+          <surName>Ji</surName>
+        </individualName>
+        <electronicMailAddress>rji@whoi.edu</electronicMailAddress>
+        <userId directory="https://orcid.org">https://orcid.org/0000-0002-8839-5427</userId>
+        <role>Co-Principal Investigator</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <givenName>Steven</givenName>
+          <surName>Lentz</surName>
+        </individualName>
+        <electronicMailAddress>slentz@whoi.edu</electronicMailAddress>
+        <userId directory="https://orcid.org">https://orcid.org/0000-0001-7498-0281</userId>
+        <role>Co-Principal Investigator</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <givenName>Joel</givenName>
+          <surName>Llopiz</surName>
+        </individualName>
+        <electronicMailAddress>jllopiz@whoi.edu</electronicMailAddress>
+        <userId directory="https://orcid.org">https://orcid.org/0000-0002-7584-7471</userId>
+        <role>Co-Principal Investigator</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <givenName>Susanne</givenName>
+          <surName>Menden-Deuer</surName>
+        </individualName>
+        <electronicMailAddress>smenden@uri.edu</electronicMailAddress>
+        <userId directory="https://orcid.org">https://orcid.org/0000-0002-8434-4251</userId>
+        <role>Co-Principal Investigator</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <givenName>Michael</givenName>
+          <surName>Neubert</surName>
+        </individualName>
+        <electronicMailAddress>mneubert@whoi.edu</electronicMailAddress>
+        <userId directory="https://orcid.org">https://orcid.org/0000-0001-8820-5008</userId>
+        <role>Co-Principal Investigator</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <givenName>Tatiana</givenName>
+          <surName>Rynearson</surName>
+        </individualName>
+        <electronicMailAddress>rynearson@uri.edu</electronicMailAddress>
+        <userId directory="https://orcid.org">https://orcid.org/0000-0003-2951-0066</userId>
+        <role>Co-Principal Investigator</role>
+      </personnel>
+      <personnel>
+        <individualName>
+          <givenName>Rachel</givenName>
+          <surName>Stanley</surName>
+        </individualName>
+        <electronicMailAddress>rstanle2@wellesley.edu</electronicMailAddress>
+        <userId directory="https://orcid.org">https://orcid.org/0000-0003-4860-2476</userId>
+        <role>Co-Principal Investigator</role>
+      </personnel>
+      <abstract>
+        <para>The Northeast U.S. Shelf (NES) Long-Term Ecological Research (LTER) project integrates observations, experiments, and models to understand and predict how planktonic food webs are changing, and how those changes impact the productivity of higher trophic levels. The NES-LTER is co-located with the Northeast U.S. Continental Shelf Large Marine Ecosystem, spanning the Middle Atlantic Bight and Gulf of Maine. Our focal cross-shelf transect extends about 150 km southward from Martha’s Vineyard, MA, to just beyond the shelf break. Our overarching question is: How is climate change impacting the pelagic NES ecosystem and, in particular, affecting the relationship between compositional (e.g., species diversity and size structure) and aggregate (e.g., rates of primary production, and transfer of energy to important forage fish species) variability?</para>
+      </abstract>
+      <funding>
+        <para>NSF Award OCE-1655686</para>
+      </funding>
+      <relatedProject>
+        <title>Ocean Observatories Initiative</title>
+        <personnel>
+          <individualName>
+            <givenName>John</givenName>
+            <surName>Trowbridge</surName>
+          </individualName>
+          <electronicMailAddress>jtrowbridge@whoi.edu</electronicMailAddress>
+          <role>Principal Investigator</role>
+        </personnel>
+        <funding>NSF Award OCE-1743430</funding>
+      </relatedProject>
+    </project>
+    <dataTable>
+      <entityName>nes-lter-doc-transect</entityName>
+      <entityDescription>DOC and DTN from discrete water column samples on NES-LTER cruises</entityDescription>
+      <physical>
+        <objectName>nes-lter-doc-transect.csv</objectName>
+        <size unit="bytes">11206</size>
+        <authentication method="MD5">fdbd5c79222b8345099c3d24c5cb0d59</authentication>
+        <dataFormat>
+          <textFormat>
+            <numHeaderLines>1</numHeaderLines>
+            <recordDelimiter>\r\n</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+      </physical>
+      <attributeList>
+        <attribute>
+          <attributeName>cruise</attributeName>
+          <attributeDefinition>Identifier for research cruise generally including abbreviation for research vessel and voyage number</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Identifier for research cruise generally including abbreviation for research vessel and voyage number</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>nan</code>
+            <codeExplanation>Missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>cast</attributeName>
+          <attributeDefinition>CTD rosette cast number chronological per cruise</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>natural</numberType>
+                <bounds>
+                  <minimum exclusive="false">1</minimum>
+                  <maximum exclusive="false">23</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>nan</code>
+            <codeExplanation>Missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>niskin</attributeName>
+          <attributeDefinition>Rosette bottle position number</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>dimensionless</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>natural</numberType>
+                <bounds>
+                  <minimum exclusive="false">1</minimum>
+                  <maximum exclusive="false">22</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>nan</code>
+            <codeExplanation>Missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>date</attributeName>
+          <attributeDefinition>Date and time in UTC when rosette bottle closed</attributeDefinition>
+          <storageType>date</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD hh:mm:ss</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+          <missingValueCode>
+            <code>nan</code>
+            <codeExplanation>Missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>latitude</attributeName>
+          <attributeDefinition>Ship's latitude when rosette bottle closed</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>degree</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">39.7726</minimum>
+                  <maximum exclusive="false">41.3242</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>nan</code>
+            <codeExplanation>Missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>longitude</attributeName>
+          <attributeDefinition>Ship's longitude when rosette bottle closed</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>degree</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">-70.8997</minimum>
+                  <maximum exclusive="false">-70.5626</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>nan</code>
+            <codeExplanation>Missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>depth</attributeName>
+          <attributeDefinition>Depth of sample below sea surface http://vocab.nerc.ac.uk/collection/P09/current/DEPH/</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>meter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">1.88</minimum>
+                  <maximum exclusive="false">502.819</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>nan</code>
+            <codeExplanation>Missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>sample_type</attributeName>
+          <attributeDefinition>Identifier for water column samples versus filter blanks</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>cast</code>
+                    <definition>water sample from Niskin bottle</definition>
+                  </codeDefinition>
+                  <codeDefinition>
+                    <code>blank</code>
+                    <definition>filter blank</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>nan</code>
+            <codeExplanation>Missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>replicate</attributeName>
+          <attributeDefinition>Lowercase letter indicating replicate subsample drawn from the same rosette bottle</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Lowercase letter indicating replicate subsample drawn from the same rosette bottle</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>nan</code>
+            <codeExplanation>Missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>doc</attributeName>
+          <attributeDefinition>Concentration of organic carbon {organic_C CAS 7440-44-0} {DOC} per unit volume of the water body [dissolved plus reactive particulate &lt;GF/F phase] by filtration and high temperature Pt catalytic oxidation. http://vocab.nerc.ac.uk/collection/P01/current/CORGCOD1/</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>micromolePerLiter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">1.7</minimum>
+                  <maximum exclusive="false">93.2</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>nan</code>
+            <codeExplanation>Missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>dtn</attributeName>
+          <attributeDefinition>Concentration of total nitrogen {total_N} per unit volume of the water body [dissolved plus reactive particulate &lt;GF/F phase] by filtration and high temperature Pt catalytic oxidation. http://vocab.nerc.ac.uk/collection/P01/current/NTOTCOD1/</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>micromolePerLiter</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">-0.4</minimum>
+                  <maximum exclusive="false">26.3</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>nan</code>
+            <codeExplanation>Missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>quality_flag</attributeName>
+          <attributeDefinition>Sample quality designator</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <enumeratedDomain>
+                  <codeDefinition>
+                    <code>1</code>
+                    <definition>good</definition>
+                  </codeDefinition>
+                </enumeratedDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>nan</code>
+            <codeExplanation>Missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>nearest_station</attributeName>
+          <attributeDefinition>NES-LTER standard station nearest to the sample location</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>NES-LTER standard station nearest to the sample location</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>nan</code>
+            <codeExplanation>Missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>station_distance</attributeName>
+          <attributeDefinition>Distance from sample location to nearest NES-LTER standard station</attributeDefinition>
+          <storageType>float</storageType>
+          <measurementScale>
+            <ratio>
+              <unit>
+                <standardUnit>kilometer</standardUnit>
+              </unit>
+              <numericDomain>
+                <numberType>real</numberType>
+                <bounds>
+                  <minimum exclusive="false">0.025</minimum>
+                  <maximum exclusive="false">2.839</maximum>
+                </bounds>
+              </numericDomain>
+            </ratio>
+          </measurementScale>
+          <missingValueCode>
+            <code>nan</code>
+            <codeExplanation>Missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>date_analyzed</attributeName>
+          <attributeDefinition>Date of laboratory sample analysis</attributeDefinition>
+          <storageType>date</storageType>
+          <measurementScale>
+            <dateTime>
+              <formatString>YYYY-MM-DD</formatString>
+              <dateTimeDomain/>
+            </dateTime>
+          </measurementScale>
+          <missingValueCode>
+            <code>nan</code>
+            <codeExplanation>Missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+        <attribute>
+          <attributeName>filename</attributeName>
+          <attributeDefinition>Name of individual sample data file from analytical instrument</attributeDefinition>
+          <storageType>string</storageType>
+          <measurementScale>
+            <nominal>
+              <nonNumericDomain>
+                <textDomain>
+                  <definition>Name of individual sample data file from analytical instrument</definition>
+                </textDomain>
+              </nonNumericDomain>
+            </nominal>
+          </measurementScale>
+          <missingValueCode>
+            <code>nan</code>
+            <codeExplanation>Missing value</codeExplanation>
+          </missingValueCode>
+        </attribute>
+      </attributeList>
+      <numberOfRecords>99</numberOfRecords>
+    </dataTable>
+  </dataset>
+  <additionalMetadata>
+    <metadata>
+      <unitList>
+        <unit id="micromolePerLiter" multiplierToSI="0.001" name="micromolePerLiter" parentSI="molePerCubicMeter" unitType="amountOfSubstanceConcentration">
+          <description>micromole per liter</description>
+        </unit>
+      </unitList>
+    </metadata>
+  </additionalMetadata>
+  <additionalMetadata>
+    <metadata>
+      <emlEditor>
+        <app>EMLassemblyline</app>
+        <release>3.5.5</release>
+      </emlEditor>
+    </metadata>
+  </additionalMetadata>
+</eml:eml>
