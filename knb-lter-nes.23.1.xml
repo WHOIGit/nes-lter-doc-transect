@@ -249,8 +249,8 @@ Used GF/Fs were discarded and the filter cartridge was disassembled and placed i
       <entityDescription>DOC and DTN from discrete water column samples on NES-LTER cruises</entityDescription>
       <physical>
         <objectName>nes-lter-doc-transect.csv</objectName>
-        <size unit="bytes">11134</size>
-        <authentication method="MD5">d7eab9574af36edd8d175a00f365db95</authentication>
+        <size unit="bytes">11206</size>
+        <authentication method="MD5">97e552b86e8c4951104b7cccc4e25460</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
