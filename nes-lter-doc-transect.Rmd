@@ -2,7 +2,9 @@
 title: "Minimal EDI package generated using EMLassemblyline and ediutilities"
 author: "Joe Futrelle"
 date: "2022-01-24"
-output: html_notebook
+output:
+  html_document:
+    df_print: paged
 ---
 
 Libraries used

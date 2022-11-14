@@ -46,7 +46,17 @@
       <organizationName>Northeast U.S. Shelf LTER</organizationName>
       <electronicMailAddress>jfutrelle@whoi.edu</electronicMailAddress>
       <userId directory="https://orcid.org">https://orcid.org/0000-0003-4537-5853</userId>
-      <role>softwareDeveloper</role>
+      <role>Software Developer</role>
+    </associatedParty>
+    <associatedParty>
+      <individualName>
+        <givenName>Kate</givenName>
+        <surName>Morkeski</surName>
+      </individualName>
+      <organizationName>Northeast U.S. Shelf LTER</organizationName>
+      <electronicMailAddress>kmorkeski@whoi.edu</electronicMailAddress>
+      <userId directory="https://orcid.org">https://orcid.org/0000-0002-2903-5851</userId>
+      <role>Metadata Provider</role>
     </associatedParty>
     <pubDate>2022-11-14</pubDate>
     <abstract>
