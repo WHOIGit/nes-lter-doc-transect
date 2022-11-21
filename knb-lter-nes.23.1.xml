@@ -29,6 +29,7 @@
       </individualName>
       <organizationName>Northeast U.S. Shelf LTER</organizationName>
       <electronicMailAddress>ecrockford@whoi.edu</electronicMailAddress>
+      <userId directory="https://orcid.org">https://orcid.org/0000-0003-0194-7282</userId>
     </creator>
     <creator>
       <individualName>
@@ -37,6 +38,7 @@
       </individualName>
       <organizationName>Northeast U.S. Shelf LTER</organizationName>
       <electronicMailAddress>epeacock@whoi.edu</electronicMailAddress>
+      <userId directory="https://orcid.org">https://orcid.org/0000-0003-0194-7282</userId>
     </creator>
     <associatedParty>
       <individualName>
@@ -58,7 +60,7 @@
       <userId directory="https://orcid.org">https://orcid.org/0000-0002-2903-5851</userId>
       <role>Metadata Provider</role>
     </associatedParty>
-    <pubDate>2022-11-14</pubDate>
+    <pubDate>2022-11-21</pubDate>
     <abstract>
       <para>Dissolved organic carbon and dissolved total nitrogen are measured from discrete bottle samples collected during CTD-rosette casts on Northeast U.S. Shelf Long-Term Ecological Research (NES-LTER) Transect cruises (ongoing since 2022). Sampling frequency is approximately seasonal. Sample collection is paired with particulate organic carbon at surface, subsurface chlorophyll max, and sometimes a third depth. Samples are filtered directly from the CTD rosette and acidified in the field, then analyzed using a Shimadzu TOC-LCPH total organic carbon analyzer coupled to a TNM-L analyzer for total nitrogen. Values are reported in micromoles per liter. </para>
     </abstract>
@@ -80,6 +82,7 @@
     </keywordSet>
     <additionalInfo>
       <para>Special thanks to Krista Longnecker, WHOI, for analyzing all samples collected for this data package. </para>
+      <para>For cruise AR66B, we thank the Ocean Observatories Initiative, funded by the National Science Foundation under Cooperative Agreement No. 1743430</para>
     </additionalInfo>
     <intellectualRights>
       <para>This data package is released to the "public domain" under Creative Commons CC0 1.0 "No Rights Reserved" (see: https://creativecommons.org/publicdomain/zero/1.0/). It is considered professional etiquette to provide attribution of the original work if this data package is shared in whole or by individual components. A generic citation is provided for this data package on the website https://portal.edirepository.org (herein "website") in the summary metadata page. Communication (and collaboration) with the creators of this data package is recommended to prevent duplicate research or publication. This data package (and its components) is made available "as is" and with no warranty of accuracy or fitness for use. The creators of this data package and the website shall not be liable for any damages resulting from misinterpretation or misuse of the data package or its components. Periodic updates of this data package may be available from the website. Thank you.
@@ -129,8 +132,8 @@
           <para>Cruise, cast, Niskin, and replicate B, when applicable, were written on cryo-labels using permanent marker and placed on label tape already wrapped on the vials.</para>
           <para>Using nitrile gloves, a 47mm polycarbonate filter cartridge (part number 1119) and silicon tubing were retrieved from a 10% acid bath and rinsed thoroughly with MilliQ. A pre-combusted, individually wrapped GF/F filter (nominally 0.7 um) was inserted into the filter cartridge using clean, dedicated forceps. The sample vials and filter cartridge were then placed in the designated clean DOC cooler and brought out on deck for sampling.</para>
           <para>DOC was the first sample collected from the Niskins, which were sampled deepest to shallowest (least to most concentrated). An integrity check was performed on each Niskin prior to sampling to confirm the Niskin was properly sealed and air-tight. The silicon tubing was connected to the stopcock and the filter cartridge was purged of air, filled with water, and flushed with sample water for 20-30 seconds. The vial and lid were then rinsed three times and the vial was filled approximately three-fourths of the way full. Once all depths were sampled at the rosette, samples were immediately brought into lab for acidification.</para>
-          <para>A clean, DOC-dedicated pipette (never used with contaminants such as organic solutions), was used to add 60 microliters of 4N hydrochloric acid to each vial. A new, sterile pipette tip was used for each cast. The same tip was used to acidify all samples as long as the tip was not submerged in the sample or contaminated by contacting any other surface. Acidified vials were gently inverted a few times to ensure acid was well mixed and then stored in a clean, secured location at room temperature.&#13;
-Used GF/Fs were discarded and the filter cartridge was disassembled and placed into a 10% acid bath until its next use. The filter cartridge was always assembled close in time to sample collection (not prepared hours ahead of time) to avoid tearing of the filter or possible contamination. </para>
+          <para>A clean, DOC-dedicated pipette (never used with contaminants such as organic solutions), was used to add 60 microliters of 4N hydrochloric acid to each vial. A new, sterile pipette tip was used for each cast. The same tip was used to acidify all samples as long as the tip was not submerged in the sample or contaminated by contacting any other surface. Acidified vials were gently inverted a few times to ensure acid was well mixed and then stored in a clean, secured location at room temperature.</para>
+          <para>Used GF/Fs were discarded and the filter cartridge was disassembled and placed into a 10% acid bath until its next use. The filter cartridge was always assembled close in time to sample collection (not prepared hours ahead of time) to avoid tearing of the filter or possible contamination. </para>
           <para>Blanks: approximately 2-3 MilliQ blanks were typically collected for each cruise and acidified with the acid used on that cruise. Possible blank sources include the ship's MilliQ system during the cruise and shore-side MilliQ used when sample supplies were being prepared.</para>
           <para># Sample Analysis</para>
           <para>Samples remained covered and were stored at ambient room temperature in the lab until they were submitted to E. Kujawinski's lab at Woods Hole Oceanographic Institution for analysis where they were refrigerated at approximately 4 degC. To obtain the concentration of total organic carbon (TOC) and total nitrogen (TN), samples were analyzed with a Shimadzu TOC-LCPH total organic carbon analyzer coupled to a TNM-L analyzer. Blanks (MilliQ) and standard curves with potassium hydrogen phthalate and potassium nitrate were interspersed into the sample runs. The coefficient of variability between replicate injections was &lt;2%. Comparisons to standards provided by Prof. D. Hansell (University of Miami) were made daily.</para>
@@ -241,18 +244,6 @@ Used GF/Fs were discarded and the filter cartridge was disassembled and placed i
       <funding>
         <para>NSF Award OCE-1655686</para>
       </funding>
-      <relatedProject>
-        <title>Ocean Observatories Initiative</title>
-        <personnel>
-          <individualName>
-            <givenName>James</givenName>
-            <surName>Edson</surName>
-          </individualName>
-          <electronicMailAddress>jedson@whoi.edu</electronicMailAddress>
-          <role>Principal Investigator</role>
-        </personnel>
-        <funding>NSF Award OCE-1743430</funding>
-      </relatedProject>
     </project>
     <dataTable>
       <entityName>nes-lter-doc-transect</entityName>
@@ -423,7 +414,7 @@ Used GF/Fs were discarded and the filter cartridge was disassembled and placed i
         </attribute>
         <attribute>
           <attributeName>sample_type</attributeName>
-          <attributeDefinition>Identifier for water column samples versus filter blanks</attributeDefinition>
+          <attributeDefinition>Identifier for water column samples versus acidified MilliQ blanks</attributeDefinition>
           <storageType>string</storageType>
           <measurementScale>
             <nominal>

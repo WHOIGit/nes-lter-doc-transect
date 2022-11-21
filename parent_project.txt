@@ -96,16 +96,4 @@
       <funding>
         <para>NSF Award OCE-1655686</para>
       </funding>
-      <relatedProject>
-        <title>Ocean Observatories Initiative</title>
-        <personnel>
-          <individualName>
-            <givenName>James</givenName>
-            <surName>Edson</surName>
-          </individualName>
-          <electronicMailAddress>jedson@whoi.edu</electronicMailAddress>
-          <role>Principal Investigator</role>
-        </personnel>
-        <funding>NSF Award OCE-1743430</funding>
-      </relatedProject>
     </project>
