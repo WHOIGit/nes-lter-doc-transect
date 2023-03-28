@@ -1,7 +1,7 @@
 ---
-title: "Minimal EDI package generated using EMLassemblyline and ediutilities"
+title: "Dissolved Organic Carbon and Dissolved Total Nitrogen"
 author: "Joe Futrelle"
-date: "2022-01-24"
+date: "2023-03-28"
 output:
   html_document:
     df_print: paged
@@ -31,12 +31,12 @@ Read the Excel metadata template and generate text templates used by
 EMLassemblyline
 
 ```{r}
-excel_to_template(here("nes-lter-doc-transect-info"), "nes-lter-doc-transect", rights="CC0", other_info= TRUE, data_table=data_table)
+excel_to_template(here("nes-lter-doc-transect-info"), "nes-lter-doc-transect", rights="CC0", data_table=data_table)
 ```
 Generate the package and insert the parent project node into the resulting EML
 
 ```{r}
-pkg_id <- "knb-lter-nes.23.1"
+pkg_id <- "knb-lter-nes.23.2"
 
 make_eml(here(),
          dataset.title="Dissolved Organic Carbon (DOC) and Dissolved Total Nitrogen (DTN) from Northeast U.S. Shelf Long Term Ecological Research (NES-LTER) Transect cruises, ongoing since 2022",

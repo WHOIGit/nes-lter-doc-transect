@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="knb-lter-nes.23.1" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd" system="edi">
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="knb-lter-nes.23.2" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd" system="edi">
   <access authSystem="https://pasta.edirepository.org/authentication" order="allowFirst" scope="document">
     <allow>
       <principal>uid=NES,o=LTER,dc=ecoinformatics,dc=org</principal>
@@ -60,7 +60,7 @@
       <userId directory="https://orcid.org">https://orcid.org/0000-0002-2903-5851</userId>
       <role>Metadata Provider</role>
     </associatedParty>
-    <pubDate>2022-11-29</pubDate>
+    <pubDate>2023-03-28</pubDate>
     <abstract>
       <para>Dissolved organic carbon and dissolved total nitrogen are measured from discrete bottle samples collected during CTD-rosette casts on Northeast U.S. Shelf Long-Term Ecological Research (NES-LTER) Transect cruises (ongoing since 2022). Sampling frequency is approximately seasonal. Sample collection is paired with particulate organic carbon at surface, subsurface chlorophyll max, and sometimes a third depth. Samples are filtered directly from the CTD rosette and acidified in the field, then analyzed using a Shimadzu TOC-LCPH total organic carbon analyzer coupled to a TNM-L analyzer for total nitrogen. Values are reported in micromoles per liter. </para>
     </abstract>
@@ -141,7 +141,7 @@
           <para># Data Cleaning and Assembly</para>
           <para>Sample metadata were combined with lab results by concatenating cruises called from the REST API of the NES-LTER data system. Nearest station uses a specific station list including NES-LTER standard stations L1 to L11 and the Martha's Vineyard Coastal Observatory (MVCO). Further documentation can be found on GitHub, at https://github.com/WHOIGit/nes-lter-doc-transect. </para>
           <para># Quality Assurance</para>
-          <para>We assured that the geographic and temporal coverage of the clean data table were within expected ranges. In addition to checking replicate samples mentioned above, the carbon to nitrogen ratio was examined. Data of good quality, flagged as 1, are included in the table.&#13;
+          <para>We assured that the geographic and temporal coverage of the clean data table were within expected ranges. In addition to checking replicate samples mentioned above, the carbon to nitrogen ratio was examined. Data of good quality, flagged as 1, are included in the table.
 </para>
         </description>
       </methodStep>
@@ -250,12 +250,12 @@
       <entityDescription>DOC and DTN from discrete water column samples on NES-LTER cruises</entityDescription>
       <physical>
         <objectName>nes-lter-doc-transect.csv</objectName>
-        <size unit="bytes">11206</size>
-        <authentication method="MD5">97e552b86e8c4951104b7cccc4e25460</authentication>
+        <size unit="bytes">11106</size>
+        <authentication method="MD5">d260df8f4f31906feb1f1749b5009985</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
-            <recordDelimiter>\r\n</recordDelimiter>
+            <recordDelimiter>\n</recordDelimiter>
             <attributeOrientation>column</attributeOrientation>
             <simpleDelimited>
               <fieldDelimiter>,</fieldDelimiter>
