@@ -31,7 +31,7 @@ Read the Excel metadata template and generate text templates used by
 EMLassemblyline
 
 ```{r}
-excel_to_template(here("nes-lter-doc-transect-info"), "nes-lter-doc-transect", rights="CC0", other_info= TRUE, data_table=data_table)
+excel_to_template(here("nes-lter-doc-transect-info"), "nes-lter-doc-transect", rights="CC0", data_table=data_table)
 ```
 Generate the package and insert the parent project node into the resulting EML
 
