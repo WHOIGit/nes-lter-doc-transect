@@ -36,7 +36,7 @@ excel_to_template(here("nes-lter-doc-transect-info"), "nes-lter-doc-transect", r
 Generate the package and insert the parent project node into the resulting EML
 
 ```{r}
-pkg_id <- "knb-lter-nes.23.1"
+pkg_id <- "knb-lter-nes.23.2"
 
 make_eml(here(),
          dataset.title="Dissolved Organic Carbon (DOC) and Dissolved Total Nitrogen (DTN) from Northeast U.S. Shelf Long Term Ecological Research (NES-LTER) Transect cruises, ongoing since 2022",
