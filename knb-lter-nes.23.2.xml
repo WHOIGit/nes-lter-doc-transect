@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="knb-lter-nes.23.1" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd" system="edi">
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="knb-lter-nes.23.2" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd" system="edi">
   <access authSystem="https://pasta.edirepository.org/authentication" order="allowFirst" scope="document">
     <allow>
       <principal>uid=NES,o=LTER,dc=ecoinformatics,dc=org</principal>
@@ -60,7 +60,7 @@
       <userId directory="https://orcid.org">https://orcid.org/0000-0002-2903-5851</userId>
       <role>Metadata Provider</role>
     </associatedParty>
-    <pubDate>2022-11-29</pubDate>
+    <pubDate>2023-12-13</pubDate>
     <abstract>
       <para>Dissolved organic carbon and dissolved total nitrogen are measured from discrete bottle samples collected during CTD-rosette casts on Northeast U.S. Shelf Long-Term Ecological Research (NES-LTER) Transect cruises (ongoing since 2022). Sampling frequency is approximately seasonal. Sample collection is paired with particulate organic carbon at surface, subsurface chlorophyll max, and sometimes a third depth. Samples are filtered directly from the CTD rosette and acidified in the field, then analyzed using a Shimadzu TOC-LCPH total organic carbon analyzer coupled to a TNM-L analyzer for total nitrogen. Values are reported in micromoles per liter. </para>
     </abstract>
@@ -94,8 +94,8 @@
         <boundingCoordinates>
           <westBoundingCoordinate>-70.8997</westBoundingCoordinate>
           <eastBoundingCoordinate>-70.5626</eastBoundingCoordinate>
-          <northBoundingCoordinate>41.3242</northBoundingCoordinate>
-          <southBoundingCoordinate>39.7726</southBoundingCoordinate>
+          <northBoundingCoordinate>41.3269</northBoundingCoordinate>
+          <southBoundingCoordinate>39.7628</southBoundingCoordinate>
         </boundingCoordinates>
       </geographicCoverage>
       <temporalCoverage>
@@ -104,7 +104,7 @@
             <calendarDate>2022-02-16</calendarDate>
           </beginDate>
           <endDate>
-            <calendarDate>2022-08-02</calendarDate>
+            <calendarDate>2023-10-16</calendarDate>
           </endDate>
         </rangeOfDates>
       </temporalCoverage>
@@ -141,13 +141,13 @@
           <para># Data Cleaning and Assembly</para>
           <para>Sample metadata were combined with lab results by concatenating cruises called from the REST API of the NES-LTER data system. Nearest station uses a specific station list including NES-LTER standard stations L1 to L11 and the Martha's Vineyard Coastal Observatory (MVCO). Further documentation can be found on GitHub, at https://github.com/WHOIGit/nes-lter-doc-transect. </para>
           <para># Quality Assurance</para>
-          <para>We assured that the geographic and temporal coverage of the clean data table were within expected ranges. In addition to checking replicate samples mentioned above, the carbon to nitrogen ratio was examined. Data of good quality, flagged as 1, are included in the table.&#13;
+          <para>We assured that the geographic and temporal coverage of the clean data table were within expected ranges. In addition to checking replicate samples mentioned above, the carbon to nitrogen ratio was examined. Data of good quality, flagged as 1, are included in the table.
 </para>
         </description>
       </methodStep>
     </methods>
     <project>
-      <title>Northeast U.S. Shelf LTER</title>
+      <title>LTER: Scales of Variability in Ecosystem Dynamics and Production on the Changing Northeast U.S. Shelf (NES II)</title>
       <personnel>
         <individualName>
           <givenName>Heidi</givenName>
@@ -156,15 +156,6 @@
         <electronicMailAddress>hsosik@whoi.edu</electronicMailAddress>
         <userId directory="https://orcid.org">https://orcid.org/0000-0002-4591-2842</userId>
         <role>Principal Investigator</role>
-      </personnel>
-      <personnel>
-        <individualName>
-          <givenName>Stace</givenName>
-          <surName>Beaulieu</surName>
-        </individualName>
-        <electronicMailAddress>sbeaulieu@whoi.edu</electronicMailAddress>
-        <userId directory="https://orcid.org">https://orcid.org/0000-0002-2609-5453</userId>
-        <role>Co-Principal Investigator</role>
       </personnel>
       <personnel>
         <individualName>
@@ -182,15 +173,6 @@
         </individualName>
         <electronicMailAddress>rji@whoi.edu</electronicMailAddress>
         <userId directory="https://orcid.org">https://orcid.org/0000-0002-8839-5427</userId>
-        <role>Co-Principal Investigator</role>
-      </personnel>
-      <personnel>
-        <individualName>
-          <givenName>Steven</givenName>
-          <surName>Lentz</surName>
-        </individualName>
-        <electronicMailAddress>slentz@whoi.edu</electronicMailAddress>
-        <userId directory="https://orcid.org">https://orcid.org/0000-0001-7498-0281</userId>
         <role>Co-Principal Investigator</role>
       </personnel>
       <personnel>
@@ -231,6 +213,14 @@
       </personnel>
       <personnel>
         <individualName>
+          <givenName>Mei</givenName>
+          <surName>Sato</surName>
+        </individualName>
+        <electronicMailAddress>msato@whoi.edu</electronicMailAddress>
+        <role>Co-Principal Investigator</role>
+      </personnel>
+      <personnel>
+        <individualName>
           <givenName>Rachel</givenName>
           <surName>Stanley</surName>
         </individualName>
@@ -238,24 +228,59 @@
         <userId directory="https://orcid.org">https://orcid.org/0000-0003-4860-2476</userId>
         <role>Co-Principal Investigator</role>
       </personnel>
+      <personnel>
+        <individualName>
+          <givenName>Weifeng</givenName>
+          <surName>Zhang</surName>
+        </individualName>
+        <electronicMailAddress>wzhang@whoi.edu</electronicMailAddress>
+        <userId directory="https://orcid.org">https://orcid.org/0000-0002-2819-1780</userId>
+        <role>Co-Principal Investigator</role>
+      </personnel>
       <abstract>
         <para>The Northeast U.S. Shelf (NES) Long-Term Ecological Research (LTER) project integrates observations, experiments, and models to understand and predict how planktonic food webs are changing, and how those changes impact the productivity of higher trophic levels. The NES-LTER is co-located with the Northeast U.S. Continental Shelf Large Marine Ecosystem, spanning the Middle Atlantic Bight and Gulf of Maine. Our focal cross-shelf transect extends about 150 km southward from Martha’s Vineyard, MA, to just beyond the shelf break. Our overarching question is: How is climate change impacting the pelagic NES ecosystem and, in particular, affecting the relationship between compositional (e.g., species diversity and size structure) and aggregate (e.g., rates of primary production, and transfer of energy to important forage fish species) variability?</para>
       </abstract>
       <funding>
-        <para>NSF Award OCE-1655686</para>
+        <para>NSF Award OCE-2322676</para>
       </funding>
+      <relatedProject>
+        <title>LTER: Linking Pelagic Community Structure with Ecosystem Dynamics and Production Regimes on the Changing Northeast US Shelf (NES I)</title>
+        <personnel>
+          <individualName>
+            <givenName>Heidi</givenName>
+            <surName>Sosik</surName>
+          </individualName>
+          <electronicMailAddress>hsosik@whoi.edu</electronicMailAddress>
+          <userId directory="https://orcid.org">https://orcid.org/0000-0002-4591-2842</userId>
+          <role>Principal Investigator</role>
+        </personnel>
+        <funding>NSF Award OCE-1655686</funding>
+      </relatedProject>
+      <relatedProject>
+        <title>Management and Operation of the Ocean Observatories Initiative (OOI)</title>
+        <personnel>
+          <individualName>
+            <givenName>James</givenName>
+            <surName>Edson</surName>
+          </individualName>
+          <electronicMailAddress>jedson@whoi.edu</electronicMailAddress>
+          <userId directory="https://orcid.org">https://orcid.org/0000-0002-8777-031X</userId>
+          <role>Principal Investigator</role>
+        </personnel>
+        <funding>NSF Award OCE-1743430</funding>
+      </relatedProject>
     </project>
     <dataTable>
       <entityName>nes-lter-doc-transect</entityName>
       <entityDescription>DOC and DTN from discrete water column samples on NES-LTER cruises</entityDescription>
       <physical>
         <objectName>nes-lter-doc-transect.csv</objectName>
-        <size unit="bytes">11206</size>
-        <authentication method="MD5">97e552b86e8c4951104b7cccc4e25460</authentication>
+        <size unit="bytes">26488</size>
+        <authentication method="MD5">aea04da8df078e1470a6587ad1a01bd3</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
-            <recordDelimiter>\r\n</recordDelimiter>
+            <recordDelimiter>\n</recordDelimiter>
             <attributeOrientation>column</attributeOrientation>
             <simpleDelimited>
               <fieldDelimiter>,</fieldDelimiter>
@@ -295,7 +320,7 @@
                 <numberType>natural</numberType>
                 <bounds>
                   <minimum exclusive="false">1</minimum>
-                  <maximum exclusive="false">23</maximum>
+                  <maximum exclusive="false">35</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -318,7 +343,7 @@
                 <numberType>natural</numberType>
                 <bounds>
                   <minimum exclusive="false">1</minimum>
-                  <maximum exclusive="false">22</maximum>
+                  <maximum exclusive="false">24</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -355,8 +380,8 @@
               <numericDomain>
                 <numberType>real</numberType>
                 <bounds>
-                  <minimum exclusive="false">39.7726</minimum>
-                  <maximum exclusive="false">41.3242</maximum>
+                  <minimum exclusive="false">39.7628</minimum>
+                  <maximum exclusive="false">41.3269</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -401,7 +426,7 @@
               <numericDomain>
                 <numberType>real</numberType>
                 <bounds>
-                  <minimum exclusive="false">1.88</minimum>
+                  <minimum exclusive="false">1.476</minimum>
                   <maximum exclusive="false">502.819</maximum>
                 </bounds>
               </numericDomain>
@@ -468,7 +493,7 @@
                 <numberType>real</numberType>
                 <bounds>
                   <minimum exclusive="false">1.7</minimum>
-                  <maximum exclusive="false">93.2</maximum>
+                  <maximum exclusive="false">107</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -490,8 +515,8 @@
               <numericDomain>
                 <numberType>real</numberType>
                 <bounds>
-                  <minimum exclusive="false">-0.4</minimum>
-                  <maximum exclusive="false">26.3</maximum>
+                  <minimum exclusive="false">-9.7</minimum>
+                  <maximum exclusive="false">28.4</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -553,7 +578,7 @@
                 <numberType>real</numberType>
                 <bounds>
                   <minimum exclusive="false">0.025</minimum>
-                  <maximum exclusive="false">2.839</maximum>
+                  <maximum exclusive="false">6.367</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -597,7 +622,7 @@
           </missingValueCode>
         </attribute>
       </attributeList>
-      <numberOfRecords>99</numberOfRecords>
+      <numberOfRecords>238</numberOfRecords>
     </dataTable>
   </dataset>
   <additionalMetadata>
