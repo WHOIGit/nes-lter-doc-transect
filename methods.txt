@@ -34,6 +34,8 @@ Samples remained covered and were stored at ambient room temperature in the lab 
 
 Data were received from the facility as Non Purgeable Organic Carbon (NPOC) and Total Nitrogen (TN). Because samples were pre-filtered through GF/F filters, NPOC and TN are operationally equivalent to dissolved organic carbon (DOC) and dissolved total nitrogen (DTN) and identified as DOC and DTN in this package. Blanks are not applied to the data.
 
+Note: Cruises EN706 and AR77 DTN values are from a second round of sample analysis. Some samples did not have enough remaining sample volume to be re-analyzed and thus DTN values do not exist for these samples and are flagged as missing. DOC data for these cruises are from the initial analysis. 
+
 # Data Cleaning and Assembly
 
 Sample metadata were combined with lab results by concatenating cruises called from the REST API of the NES-LTER data system. Nearest station uses a specific station list including NES-LTER standard stations L1 to L11 and the Martha's Vineyard Coastal Observatory (MVCO). Further documentation can be found on GitHub, at https://github.com/WHOIGit/nes-lter-doc-transect. 
