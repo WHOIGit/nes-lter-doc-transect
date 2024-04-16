@@ -20,13 +20,24 @@ library(ediutilities)
 library(here)
 library(lubridate)
 library(dplyr)
+library(readr)
+
 ```
 
 Read data table
 
 ```{r}
 # output file from submodule is downloaded and _input appended to filename to allow for column modifications below
-data_table <- read.csv(here("nes-lter-doc-transect_input.csv"))
+data_table <- read_csv(here("nes-lter-doc-transect_input.csv"), na = c("nan", "NaN", ""))
+
+# read in and add one sample that is missing because CTD btl file does not exist
+missing <- read.csv(here("doc-sample-missing-btl-data.csv"), na.strings = c("nan", "NaN", ""))
+missing$comments <- as.character(missing$comments)
+missing$date <- as.POSIXct(missing$date, tz = "UTC", format = "%Y-%m-%d %H:%M:%S")
+missing$date_analyzed <- as.POSIXct(missing$date_analyzed)
+
+data_table <- add_row(data_table, missing, .before = 194)
+
 ```
 Adjust columns to match metadata
 
@@ -35,7 +46,9 @@ Adjust columns to match metadata
 data_table <- data_table |> 
   select(-temperature, -salinity, -comments) |>
   rename(iode_quality_flag_c = quality_flag_c) |>
-  rename(iode_quality_flag_n = quality_flag_n) 
+  rename(iode_quality_flag_n = quality_flag_n) |>
+  mutate(doc = replace(doc, iode_quality_flag_c == "4", NA)) |>
+  mutate(dtn = replace(dtn, iode_quality_flag_n == "4", NA))
 
 write.csv(data_table, "nes-lter-doc-transect.csv", row.names = FALSE)
 
