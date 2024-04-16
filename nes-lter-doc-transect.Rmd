@@ -1,7 +1,7 @@
 ---
 title: "Dissolved Organic Carbon and Dissolved Total Nitrogen"
-author: "Joe Futrelle"
-date: "2023-03-28"
+author: "Joe Futrelle, Kate Morkeski"
+date: "2024-04-16"
 output:
   html_document:
     df_print: paged
@@ -19,13 +19,28 @@ library(EMLassemblyline)
 library(ediutilities)
 library(here)
 library(lubridate)
+library(dplyr)
 ```
 
-Read example data table
+Read data table
 
 ```{r}
-data_table <- read.csv(here("nes-lter-doc-transect.csv"))
+# output file from submodule is downloaded and _input appended to filename to allow for column modifications below
+data_table <- read.csv(here("nes-lter-doc-transect_input.csv"))
 ```
+Adjust columns to match metadata
+
+```{r}
+
+data_table <- data_table |> 
+  select(-temperature, -salinity, -comments) |>
+  rename(iode_quality_flag_c = quality_flag_c) |>
+  rename(iode_quality_flag_n = quality_flag_n) 
+
+write.csv(data_table, "nes-lter-doc-transect.csv", row.names = FALSE)
+
+```
+
 
 Read the Excel metadata template and generate text templates used by
 EMLassemblyline
