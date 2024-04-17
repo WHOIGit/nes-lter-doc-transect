@@ -60,7 +60,7 @@
       <userId directory="https://orcid.org">https://orcid.org/0000-0002-2903-5851</userId>
       <role>Metadata Provider</role>
     </associatedParty>
-    <pubDate>2024-04-16</pubDate>
+    <pubDate>2024-04-17</pubDate>
     <abstract>
       <para>Dissolved organic carbon and dissolved total nitrogen are measured from discrete bottle samples collected during CTD rosette casts on Northeast U.S. Shelf Long-Term Ecological Research (NES-LTER) transect cruises (ongoing since 2022). Sampling frequency is approximately seasonal. Sample collection is paired with particulate organic carbon at surface, subsurface chlorophyll max, and sometimes a third depth. Samples are filtered directly from the CTD rosette and acidified in the field, then analyzed using a Shimadzu TOC-LCPH total organic carbon analyzer coupled to a TNM-L analyzer for total nitrogen. Values are reported in micromoles per liter. </para>
     </abstract>
@@ -143,6 +143,8 @@
           <para>Sample metadata were combined with lab results by concatenating cruises called from the REST API of the NES-LTER data system. Nearest station uses a specific station list including NES-LTER standard stations L1 to L11 and the Martha's Vineyard Coastal Observatory (MVCO). IODE quality flags were applied to carbon and nitrogen data separately. Any value flagged as bad was converted to NA. Further documentation can be found on GitHub, at https://github.com/WHOIGit/nes-lter-doc-transect. </para>
           <para># Quality Assurance</para>
           <para>We assured that the geographic and temporal coverage of the clean data table were within expected ranges. In addition to checking replicate samples mentioned above, the carbon to nitrogen ratio was examined as well as pattern of concentrations relative to depth and geographic location. </para>
+          <para># Differences From Previous Versions</para>
+          <para>In version 2, data from four cruises were added. A second quality flag was added to distinguish C from N quality, and both quality flags were identified as IODE primary level flags. </para>
           <para># Related Packages</para>
           <para>Dissolved inorganic nutrient data, which could be used together with these data to calculate dissolved organic nitrogen (DON) and the DOC to DON ratio, are in the following packages: </para>
           <para>Sosik, H.M., E. Crockford, and E. Peacock. 2021. Dissolved inorganic nutrients from NES-LTER Transect cruises, including 4 macro-nutrients from water column bottle samples, ongoing since 2017 ver 2. Environmental Data Initiative. https://doi.org/10.6073/pasta/ec6e5c76c7ad4e0da0a8d1cec84fa3f5 (Accessed 2024-04-16).</para>

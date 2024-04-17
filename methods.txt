@@ -44,6 +44,10 @@ Sample metadata were combined with lab results by concatenating cruises called f
 
 We assured that the geographic and temporal coverage of the clean data table were within expected ranges. In addition to checking replicate samples mentioned above, the carbon to nitrogen ratio was examined as well as pattern of concentrations relative to depth and geographic location. 
 
+# Differences From Previous Versions
+
+In version 2, data from four cruises were added. A second quality flag was added to distinguish C from N quality, and both quality flags were identified as IODE primary level flags. 
+
 # Related Packages
 
 Dissolved inorganic nutrient data, which could be used together with these data to calculate dissolved organic nitrogen (DON) and the DOC to DON ratio, are in the following packages: 
