@@ -53,5 +53,3 @@ In version 2, data from four cruises were added. A second quality flag was added
 Dissolved inorganic nutrient data, which could be used together with these data to calculate dissolved organic nitrogen (DON) and the DOC to DON ratio, are in the following packages: 
 
 Sosik, H.M., E. Crockford, and E. Peacock. 2021. Dissolved inorganic nutrients from NES-LTER Transect cruises, including 4 macro-nutrients from water column bottle samples, ongoing since 2017 ver 2. Environmental Data Initiative. https://doi.org/10.6073/pasta/ec6e5c76c7ad4e0da0a8d1cec84fa3f5 (Accessed 2024-04-16).
-
-Sosik, H.M., E. Crockford, and E. Peacock. 2022. Dissolved inorganic nutrients from the Martha's Vineyard Coastal Observatory (MVCO), including 4 macro-nutrients from water column bottle samples, ongoing since 2003 (NES-LTER since 2017) ver 3. Environmental Data Initiative. https://doi.org/10.6073/pasta/ca34be7554ddc67c9fa0f8dea01f375b (Accessed 2024-04-16).
