@@ -1,7 +1,7 @@
 ---
 title: "Dissolved Organic Carbon and Dissolved Total Nitrogen"
 author: "Joe Futrelle, Kate Morkeski"
-date: "2024-04-16"
+date: "2024-06-03"
 output:
   html_document:
     df_print: paged
@@ -30,13 +30,13 @@ Read data table
 # output file from submodule is downloaded and _input appended to filename to allow for column modifications below
 data_table <- read_csv(here("nes-lter-doc-transect_input.csv"), na = c("nan", "NaN", ""))
 
-# read in and add one sample that is missing because CTD btl file does not exist
-missing <- read.csv(here("doc-sample-missing-btl-data.csv"), na.strings = c("nan", "NaN", ""))
-missing$comments <- as.character(missing$comments)
-missing$date <- as.POSIXct(missing$date, tz = "UTC", format = "%Y-%m-%d %H:%M:%S")
-missing$date_analyzed <- as.POSIXct(missing$date_analyzed)
-
-data_table <- add_row(data_table, missing, .before = 194)
+# # read in and add one sample that is missing because CTD btl file does not exist
+# missing <- read.csv(here("doc-sample-missing-btl-data.csv"), na.strings = c("nan", "NaN", ""))
+# missing$comments <- as.character(missing$comments)
+# missing$date <- as.POSIXct(missing$date, tz = "UTC", format = "%Y-%m-%d %H:%M:%S")
+# missing$date_analyzed <- as.POSIXct(missing$date_analyzed)
+# 
+# data_table <- add_row(data_table, missing, .before = 194)
 
 ```
 Adjust columns to match metadata
