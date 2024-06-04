@@ -46,7 +46,7 @@ We assured that the geographic and temporal coverage of the clean data table wer
 
 # Differences From Previous Versions
 
-In version 2, data from four cruises were added. A second quality flag was added to distinguish C from N quality, and both quality flags were identified as IODE primary level flags. 
+In version 2, data from five cruises were added. A second quality flag was added to distinguish C from N quality, and both quality flags were identified as IODE primary level flags. 
 
 # Related Packages
 
