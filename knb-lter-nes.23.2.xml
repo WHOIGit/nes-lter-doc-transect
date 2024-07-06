@@ -50,17 +50,7 @@
       <userId directory="https://orcid.org">https://orcid.org/0000-0003-4537-5853</userId>
       <role>Software Developer</role>
     </associatedParty>
-    <associatedParty>
-      <individualName>
-        <givenName>Kate</givenName>
-        <surName>Morkeski</surName>
-      </individualName>
-      <organizationName>Northeast U.S. Shelf LTER</organizationName>
-      <electronicMailAddress>kmorkeski@whoi.edu</electronicMailAddress>
-      <userId directory="https://orcid.org">https://orcid.org/0000-0002-2903-5851</userId>
-      <role>Metadata Provider</role>
-    </associatedParty>
-    <pubDate>2024-06-04</pubDate>
+    <pubDate>2024-07-06</pubDate>
     <abstract>
       <para>Dissolved organic carbon and dissolved total nitrogen are measured from discrete bottle samples collected during CTD rosette casts on Northeast U.S. Shelf Long-Term Ecological Research (NES-LTER) transect cruises (ongoing since 2022). Sampling frequency is approximately seasonal. Sample collection is paired with particulate organic carbon at surface, subsurface chlorophyll max, and sometimes a third depth. Samples are filtered directly from the CTD rosette and acidified in the field, then analyzed using a Shimadzu TOC-LCPH total organic carbon analyzer coupled to a TNM-L analyzer for total nitrogen. Values are reported in micromoles per liter. </para>
     </abstract>
@@ -168,7 +158,7 @@ We assured that the geographic and temporal coverage of the clean data table wer
 
 # Differences From Previous Versions
 
-In version 2, data from five cruises were added. A second quality flag was added to distinguish C from N quality, and both quality flags were identified as IODE primary level flags. 
+In version 2, data from five cruises were added. A second quality flag was added to distinguish C from N quality, and both quality flags were identified as IODE primary level flags. The column previously called "date" was renamed to "date\_time\_utc". Missing value codes were updated to NaN for numeric columns and blank entries for text columns. 
 
 # Related Packages
 
@@ -308,8 +298,8 @@ Sosik, H.M., E. Crockford, and E. Peacock. 2021. Dissolved inorganic nutrients f
       <entityDescription>DOC and DTN from discrete water column samples on NES-LTER cruises</entityDescription>
       <physical>
         <objectName>nes-lter-doc-transect.csv</objectName>
-        <size unit="bytes">33839</size>
-        <authentication method="MD5">27514bb561b1cfc1ea64bef4e5218af2</authentication>
+        <size unit="bytes">33942</size>
+        <authentication method="MD5">53155abfefc3a7a6a7001731f297d7d2</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -335,10 +325,6 @@ Sosik, H.M., E. Crockford, and E. Peacock. 2021. Dissolved inorganic nutrients f
               </nonNumericDomain>
             </nominal>
           </measurementScale>
-          <missingValueCode>
-            <code>NA</code>
-            <codeExplanation>Missing value</codeExplanation>
-          </missingValueCode>
         </attribute>
         <attribute>
           <attributeName>cast</attributeName>
@@ -359,8 +345,8 @@ Sosik, H.M., E. Crockford, and E. Peacock. 2021. Dissolved inorganic nutrients f
             </ratio>
           </measurementScale>
           <missingValueCode>
-            <code>NA</code>
-            <codeExplanation>Missing value</codeExplanation>
+            <code>NaN</code>
+            <codeExplanation>Not applicable</codeExplanation>
           </missingValueCode>
         </attribute>
         <attribute>
@@ -382,12 +368,12 @@ Sosik, H.M., E. Crockford, and E. Peacock. 2021. Dissolved inorganic nutrients f
             </ratio>
           </measurementScale>
           <missingValueCode>
-            <code>NA</code>
-            <codeExplanation>Missing value</codeExplanation>
+            <code>NaN</code>
+            <codeExplanation>Not applicable</codeExplanation>
           </missingValueCode>
         </attribute>
         <attribute>
-          <attributeName>date</attributeName>
+          <attributeName>date_time_utc</attributeName>
           <attributeDefinition>Date and time in UTC when rosette bottle closed</attributeDefinition>
           <storageType>date</storageType>
           <measurementScale>
@@ -397,8 +383,8 @@ Sosik, H.M., E. Crockford, and E. Peacock. 2021. Dissolved inorganic nutrients f
             </dateTime>
           </measurementScale>
           <missingValueCode>
-            <code>NA</code>
-            <codeExplanation>Missing value</codeExplanation>
+            <code>NaN</code>
+            <codeExplanation>Not applicable</codeExplanation>
           </missingValueCode>
         </attribute>
         <attribute>
@@ -420,8 +406,8 @@ Sosik, H.M., E. Crockford, and E. Peacock. 2021. Dissolved inorganic nutrients f
             </ratio>
           </measurementScale>
           <missingValueCode>
-            <code>NA</code>
-            <codeExplanation>Missing value</codeExplanation>
+            <code>NaN</code>
+            <codeExplanation>Not applicable</codeExplanation>
           </missingValueCode>
         </attribute>
         <attribute>
@@ -443,8 +429,8 @@ Sosik, H.M., E. Crockford, and E. Peacock. 2021. Dissolved inorganic nutrients f
             </ratio>
           </measurementScale>
           <missingValueCode>
-            <code>NA</code>
-            <codeExplanation>Missing value</codeExplanation>
+            <code>NaN</code>
+            <codeExplanation>Not applicable</codeExplanation>
           </missingValueCode>
         </attribute>
         <attribute>
@@ -466,8 +452,8 @@ Sosik, H.M., E. Crockford, and E. Peacock. 2021. Dissolved inorganic nutrients f
             </ratio>
           </measurementScale>
           <missingValueCode>
-            <code>NA</code>
-            <codeExplanation>Missing value</codeExplanation>
+            <code>NaN</code>
+            <codeExplanation>Not applicable</codeExplanation>
           </missingValueCode>
         </attribute>
         <attribute>
@@ -490,10 +476,6 @@ Sosik, H.M., E. Crockford, and E. Peacock. 2021. Dissolved inorganic nutrients f
               </nonNumericDomain>
             </nominal>
           </measurementScale>
-          <missingValueCode>
-            <code>NA</code>
-            <codeExplanation>Missing value</codeExplanation>
-          </missingValueCode>
         </attribute>
         <attribute>
           <attributeName>replicate</attributeName>
@@ -508,10 +490,6 @@ Sosik, H.M., E. Crockford, and E. Peacock. 2021. Dissolved inorganic nutrients f
               </nonNumericDomain>
             </nominal>
           </measurementScale>
-          <missingValueCode>
-            <code>NA</code>
-            <codeExplanation>Missing value</codeExplanation>
-          </missingValueCode>
         </attribute>
         <attribute>
           <attributeName>doc</attributeName>
@@ -532,8 +510,8 @@ Sosik, H.M., E. Crockford, and E. Peacock. 2021. Dissolved inorganic nutrients f
             </ratio>
           </measurementScale>
           <missingValueCode>
-            <code>NA</code>
-            <codeExplanation>Missing value</codeExplanation>
+            <code>NaN</code>
+            <codeExplanation>Not available</codeExplanation>
           </missingValueCode>
         </attribute>
         <attribute>
@@ -555,8 +533,8 @@ Sosik, H.M., E. Crockford, and E. Peacock. 2021. Dissolved inorganic nutrients f
             </ratio>
           </measurementScale>
           <missingValueCode>
-            <code>NA</code>
-            <codeExplanation>Missing value</codeExplanation>
+            <code>NaN</code>
+            <codeExplanation>Not available</codeExplanation>
           </missingValueCode>
         </attribute>
         <attribute>
@@ -638,10 +616,6 @@ Sosik, H.M., E. Crockford, and E. Peacock. 2021. Dissolved inorganic nutrients f
               </nonNumericDomain>
             </nominal>
           </measurementScale>
-          <missingValueCode>
-            <code>NA</code>
-            <codeExplanation>Missing value</codeExplanation>
-          </missingValueCode>
         </attribute>
         <attribute>
           <attributeName>station_distance</attributeName>
@@ -655,15 +629,15 @@ Sosik, H.M., E. Crockford, and E. Peacock. 2021. Dissolved inorganic nutrients f
               <numericDomain>
                 <numberType>real</numberType>
                 <bounds>
-                  <minimum exclusive="false">0.025</minimum>
-                  <maximum exclusive="false">6.749</maximum>
+                  <minimum exclusive="false">0.024</minimum>
+                  <maximum exclusive="false">2.837</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
           </measurementScale>
           <missingValueCode>
-            <code>NA</code>
-            <codeExplanation>Missing value</codeExplanation>
+            <code>NaN</code>
+            <codeExplanation>Not applicable</codeExplanation>
           </missingValueCode>
         </attribute>
         <attribute>
@@ -676,10 +650,6 @@ Sosik, H.M., E. Crockford, and E. Peacock. 2021. Dissolved inorganic nutrients f
               <dateTimeDomain/>
             </dateTime>
           </measurementScale>
-          <missingValueCode>
-            <code>NA</code>
-            <codeExplanation>Missing value</codeExplanation>
-          </missingValueCode>
         </attribute>
         <attribute>
           <attributeName>filename</attributeName>
@@ -694,10 +664,6 @@ Sosik, H.M., E. Crockford, and E. Peacock. 2021. Dissolved inorganic nutrients f
               </nonNumericDomain>
             </nominal>
           </measurementScale>
-          <missingValueCode>
-            <code>NA</code>
-            <codeExplanation>Missing value</codeExplanation>
-          </missingValueCode>
         </attribute>
       </attributeList>
       <numberOfRecords>272</numberOfRecords>

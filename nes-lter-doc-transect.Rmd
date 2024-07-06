@@ -20,6 +20,7 @@ library(ediutilities)
 library(here)
 library(lubridate)
 library(dplyr)
+library(tidyr)
 library(readr)
 
 ```
@@ -28,7 +29,8 @@ Read data table
 
 ```{r}
 # output file from submodule is downloaded and _input appended to filename to allow for column modifications below
-data_table <- read_csv(here("nes-lter-doc-transect_input.csv"), na = c("nan", "NaN", ""))
+#data_table <- read_csv(here("nes-lter-doc-transect_input.csv"), na = c("nan", "NaN", ""))
+data_table <- read_csv(here("nes-lter-doc-transect_input.csv"))
 
 # # read in and add one sample that is missing because CTD btl file does not exist
 # missing <- read.csv(here("doc-sample-missing-btl-data.csv"), na.strings = c("nan", "NaN", ""))
@@ -44,13 +46,14 @@ Adjust columns to match metadata
 ```{r}
 
 data_table <- data_table |> 
-  select(-temperature, -salinity, -comments) |>
-  rename(iode_quality_flag_c = quality_flag_c) |>
-  rename(iode_quality_flag_n = quality_flag_n) |>
-  mutate(doc = replace(doc, iode_quality_flag_c == "4", NA)) |>
-  mutate(dtn = replace(dtn, iode_quality_flag_n == "4", NA))
+  relocate(date_analyzed, .after = distance_km) |>
+  relocate(filename, .after = date_analyzed) |>
+  rename(date_time_utc = date) |>
+  rename(station_distance = distance_km) |>
+  replace_na(list(cast = NaN, niskin = NaN, latitude = NaN, longitude = NaN, depth = NaN, doc = NaN, dtn = NaN, distance_km = NaN)) |>
+  replace_na(list(replicate = ""))
 
-write.csv(data_table, "nes-lter-doc-transect.csv", row.names = FALSE)
+write.csv(data_table, "nes-lter-doc-transect.csv", na = "NaN", row.names = FALSE)
 
 ```
 
@@ -71,7 +74,7 @@ make_eml(here(),
          data.table="nes-lter-doc-transect.csv",
          data.table.description="DOC and DTN from discrete water column samples on NES-LTER cruises",
          data.table.name = "nes-lter-doc-transect",
-         temporal.coverage = temporal_coverage(data_table$date),
+         temporal.coverage = temporal_coverage(data_table$date_time_utc),
          geographic.description = "NES-LTER Transect",
          geographic.coordinates = geographic_coordinates(data_table$latitude, data_table$longitude),
          maintenance.description = "ongoing",
