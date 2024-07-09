@@ -62,6 +62,8 @@ Read the Excel metadata template and generate text templates used by
 EMLassemblyline
 
 ```{r}
+
+data_table <- read_csv(here("nes-lter-doc-transect.csv"))
 excel_to_template(here("nes-lter-doc-transect-info"), "nes-lter-doc-transect", rights="CC0", data_table=data_table, file_type=".md")
 ```
 Generate the package and insert the parent project node into the resulting EML
@@ -82,5 +84,5 @@ make_eml(here(),
          user.domain = "LTER",
          package.id = pkg_id)
 
-project_insert(pkg_id, "parent_project_NESI-II_OOI.txt")
+project_insert(pkg_id, "parent_project_NESI-II.txt")
 ```

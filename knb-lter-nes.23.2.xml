@@ -50,7 +50,7 @@
       <userId directory="https://orcid.org">https://orcid.org/0000-0003-4537-5853</userId>
       <role>Software Developer</role>
     </associatedParty>
-    <pubDate>2024-07-06</pubDate>
+    <pubDate>2024-07-09</pubDate>
     <abstract>
       <para>Dissolved organic carbon and dissolved total nitrogen are measured from discrete bottle samples collected during CTD rosette casts on Northeast U.S. Shelf Long-Term Ecological Research (NES-LTER) transect cruises (ongoing since 2022). Sampling frequency is approximately seasonal. Sample collection is paired with particulate organic carbon at surface, subsurface chlorophyll max, and sometimes a third depth. Samples are filtered directly from the CTD rosette and acidified in the field, then analyzed using a Shimadzu TOC-LCPH total organic carbon analyzer coupled to a TNM-L analyzer for total nitrogen. Values are reported in micromoles per liter. </para>
     </abstract>
@@ -240,6 +240,7 @@ Sosik, H.M., E. Crockford, and E. Peacock. 2021. Dissolved inorganic nutrients f
           <surName>Sato</surName>
         </individualName>
         <electronicMailAddress>msato@whoi.edu</electronicMailAddress>
+        <userId directory="https://orcid.org">https://orcid.org/0000-0003-4860-2476</userId>
         <role>Co-Principal Investigator</role>
       </personnel>
       <personnel>
@@ -253,7 +254,7 @@ Sosik, H.M., E. Crockford, and E. Peacock. 2021. Dissolved inorganic nutrients f
       </personnel>
       <personnel>
         <individualName>
-          <givenName>Weifeng</givenName>
+          <givenName>Weifeng Gordon</givenName>
           <surName>Zhang</surName>
         </individualName>
         <electronicMailAddress>wzhang@whoi.edu</electronicMailAddress>
@@ -278,19 +279,6 @@ Sosik, H.M., E. Crockford, and E. Peacock. 2021. Dissolved inorganic nutrients f
           <role>Principal Investigator</role>
         </personnel>
         <funding>NSF Award OCE-1655686</funding>
-      </relatedProject>
-      <relatedProject>
-        <title>Management and Operation of the Ocean Observatories Initiative (OOI)</title>
-        <personnel>
-          <individualName>
-            <givenName>James</givenName>
-            <surName>Edson</surName>
-          </individualName>
-          <electronicMailAddress>jedson@whoi.edu</electronicMailAddress>
-          <userId directory="https://orcid.org">https://orcid.org/0000-0002-8777-031X</userId>
-          <role>Principal Investigator</role>
-        </personnel>
-        <funding>NSF Award OCE-1743430</funding>
       </relatedProject>
     </project>
     <dataTable>
