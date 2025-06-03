@@ -54,6 +54,6 @@ In version 3, data from four cruises were added, including for the first time sa
 
 # Related Packages
 
-Dissolved inorganic nutrient data, which could be used together with these data to calculate dissolved organic nitrogen (DON) and the DOC to DON ratio, are in the following packages: 
+Discrete dissolved inorganic nutrient data, which could be used together with these data to calculate dissolved organic nitrogen (DON) and the DOC to DON ratio, are in the following packages: 
 
-Sosik, H.M., E. Crockford, and E. Peacock. 2021. Dissolved inorganic nutrients from NES-LTER Transect cruises, including 4 macro-nutrients from water column bottle samples, ongoing since 2017 ver 2. Environmental Data Initiative. https://doi.org/10.6073/pasta/ec6e5c76c7ad4e0da0a8d1cec84fa3f5 (Accessed 2024-04-16).
+Sosik, H.M., E.T. Crockford, E. Peacock, and OOI CGSN Data Team. 2025. Dissolved inorganic nutrients from NES-LTER Transect cruises, including 4 macro-nutrients from water column bottle samples, ongoing since 2017 ver 3. Environmental Data Initiative. https://doi.org/10.6073/pasta/abc6c4301cc3e0317e68ca118711f682 (Accessed 2025-06-03).
