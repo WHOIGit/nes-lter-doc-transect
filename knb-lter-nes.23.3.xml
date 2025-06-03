@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="knb-lter-nes.23.2" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd" system="edi">
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="knb-lter-nes.23.3" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd" system="edi">
   <access authSystem="https://pasta.edirepository.org/authentication" order="allowFirst" scope="document">
     <allow>
       <principal>uid=NES,o=LTER,dc=ecoinformatics,dc=org</principal>
@@ -50,7 +50,7 @@
       <userId directory="https://orcid.org">https://orcid.org/0000-0003-4537-5853</userId>
       <role>Software Developer</role>
     </associatedParty>
-    <pubDate>2024-07-09</pubDate>
+    <pubDate>2025-06-03</pubDate>
     <abstract>
       <para>Dissolved organic carbon and dissolved total nitrogen are measured from discrete bottle samples collected during CTD rosette casts on Northeast U.S. Shelf Long-Term Ecological Research (NES-LTER) transect cruises (ongoing since 2022). Sampling frequency is approximately seasonal. Sample collection is paired with particulate organic carbon at surface, subsurface chlorophyll max, and sometimes a third depth. Samples are filtered directly from the CTD rosette and acidified in the field, then analyzed using a Shimadzu TOC-LCPH total organic carbon analyzer coupled to a TNM-L analyzer for total nitrogen. Values are reported in micromoles per liter. </para>
     </abstract>
@@ -71,8 +71,10 @@
       <keywordThesaurus>NOAA Large Marine Ecosystems</keywordThesaurus>
     </keywordSet>
     <additionalInfo>
-      <para>Special thanks to Krista Longnecker, WHOI, for analyzing all samples collected for this data package. </para>
-      <para>For cruise AR66B, we thank the Ocean Observatories Initiative, funded by the National Science Foundation under Cooperative Agreement No. 1743430</para>
+      <para>Special thanks to Krista Longnecker, WHOI, for analyzing all samples collected for this data package prior to March 2024.
+Special thanks to the Carlson DOM Analytical Lab at UC Santa Barbara for analyzing all samples from May 2024 to present.</para>
+      <para>For cruise AR66B, we thank the Ocean Observatories Initiative, funded by the National Science Foundation under Cooperative Agreement No. 1743430
+</para>
     </additionalInfo>
     <intellectualRights>
       <para>This data package is released to the "public domain" under Creative Commons CC0 1.0 "No Rights Reserved" (see: https://creativecommons.org/publicdomain/zero/1.0/). It is considered professional etiquette to provide attribution of the original work if this data package is shared in whole or by individual components. A generic citation is provided for this data package on the website https://portal.edirepository.org (herein "website") in the summary metadata page. Communication (and collaboration) with the creators of this data package is recommended to prevent duplicate research or publication. This data package (and its components) is made available "as is" and with no warranty of accuracy or fitness for use. The creators of this data package and the website shall not be liable for any damages resulting from misinterpretation or misuse of the data package or its components. Periodic updates of this data package may be available from the website. Thank you.
@@ -82,7 +84,7 @@
       <geographicCoverage>
         <geographicDescription>NES-LTER Transect</geographicDescription>
         <boundingCoordinates>
-          <westBoundingCoordinate>-70.9016</westBoundingCoordinate>
+          <westBoundingCoordinate>-70.9116</westBoundingCoordinate>
           <eastBoundingCoordinate>-70.5626</eastBoundingCoordinate>
           <northBoundingCoordinate>41.3269</northBoundingCoordinate>
           <southBoundingCoordinate>39.7551</southBoundingCoordinate>
@@ -94,7 +96,7 @@
             <calendarDate>2022-02-16</calendarDate>
           </beginDate>
           <endDate>
-            <calendarDate>2024-02-13</calendarDate>
+            <calendarDate>2025-01-28</calendarDate>
           </endDate>
         </rangeOfDates>
       </temporalCoverage>
@@ -124,7 +126,7 @@ Final vial prep: Using gloves, vials were capped with clean, dry, Teflon-lined s
 
 # CTD Rosette Bottle Sampling on NES-LTER cruises
 
-Samples were collected from the water column at multiple depths along the NES-LTER transect using Niskin bottles on a CTD rosette system. Every main NES-LTER station (L1 - L11) and sometimes Martha's Vineyard Coastal Observatory (MVCO) was sampled when feasible. Stations L2, L4, L6, L8, L10, and L11 were prioritized when necessary. Surface was always sampled and an additional 1-3 depths were also sampled as determined by the depth of each station. Sample depths were always matched with particulate organic carbon (POC) depths at surface and subsurface chlorophyll max (SCM). On AT46, our first sampling effort, the third depth was always paired with the third POC depth. On AR66B, our second sampling effort, a third or fourth depth was sometimes paired with the third POC depth and/or sometimes a dissolved inorganic carbon (DIC) sampled depth. On EN687, our third sampling effort, the third depth changed to a standardized depth of approximately 90 meters for stations L6 through L11 (main stations deeper than 90 m). The standard sampling plan since the summer of 2022 includes a 3rd standardized depth of approximately 100 meters at L6 through L11 and a 4th depth of the deepest water at L10 and L11. Approximately 10% replicate samples were collected on each cruise to check sampling precision. Replicate samples were always collected from the deepest depth of the most offshore station (typically 500 m at L11) on every cruise to act as a baseline for the cruise, assuming this discrete depth will have the lowest dissolved organic carbon observed on that cruise. 
+Samples were collected from the water column at multiple depths along the NES-LTER transect using Niskin bottles on a CTD rosette system. Every main NES-LTER station (L1 - L11) and sometimes Martha's Vineyard Coastal Observatory (MVCO) was sampled when feasible. Stations L2, L4, L6, L8, L10, and L11 were prioritized when necessary. Surface was always sampled and an additional 1-3 depths were also sampled as determined by the depth of each station. Sample depths were always matched with particulate organic carbon (POC) depths at surface and subsurface chlorophyll max (SCM). On AT46, our first sampling effort, the third depth was always paired with the third POC depth. On AR66B, our second sampling effort, a third or fourth depth was sometimes paired with the third POC depth and/or sometimes a dissolved inorganic carbon (DIC) sampled depth. On EN687, our third sampling effort, the third depth changed to a standardized depth of approximately 90 meters for stations L6 through L11 (main stations deeper than 90 m). The standard sampling plan since the summer of 2022 includes a 3rd standardized depth of approximately 100 meters at L6 through L11 and a 4th depth of the deepest water at L10 and L11. Starting in the winter of 2024 (EN712), the standard sampling plan was updated to sample bottom depth from L6-L10 and 500m at L11. Approximately 10% replicate samples were collected on each cruise to check sampling precision. Replicate samples were always collected from the deepest depth of the most offshore station (typically 500 m at L11) on every cruise to act as a baseline for the cruise, assuming this discrete depth will have the lowest dissolved organic carbon observed on that cruise. 
 
 # Filtering Protocol
 
@@ -142,9 +144,13 @@ Blanks: approximately 2-3 Milli-Q blanks were typically collected for each cruis
 
 # Sample Analysis
 
-Samples remained covered and were stored at ambient room temperature in the lab until they were submitted to E. Kujawinski's lab at Woods Hole Oceanographic Institution for analysis where they were refrigerated at approximately 4 degC. To obtain the concentration of total organic carbon (TOC) and total nitrogen (TN), samples were analyzed with a Shimadzu TOC-LCPH total organic carbon analyzer coupled to a TNM-L analyzer. Blanks (MilliQ) and standard curves with potassium hydrogen phthalate and potassium nitrate were interspersed into the sample runs. The coefficient of variability between replicate injections was &lt;2%. Comparisons to standards provided by Prof. D. Hansell (University of Miami) were made daily.
+Samples remained covered and were stored at ambient room temperature in the lab until they were submitted for analysis to obtain the concentration of total organic carbon (TOC) and total nitrogen (TN). Samples collected from Feb 2022 through Mar 2024 were submitted to E. Kujawinski's lab at Woods Hole Oceanographic Institution for analysis where they were refrigerated at approximately 4 degC until analysis. From May 2024 to present, samples are shipped to the Carlson DOM Analytical Lab at UC Santa Barbara for analysis. 
 
-Data were received from the facility as Non Purgeable Organic Carbon (NPOC) and Total Nitrogen (TN). Because samples were pre-filtered through GF/F filters, NPOC and TN are operationally equivalent to dissolved organic carbon (DOC) and dissolved total nitrogen (DTN) and identified as DOC and DTN in this package. Blanks are not applied to the data.
+The Kujawinski lab at WHOI analyzed samples with a Shimadzu TOC-LCPH total organic carbon analyzer coupled to a TNM-L analyzer. Blanks (MilliQ) and standard curves with potassium hydrogen phthalate and potassium nitrate were interspersed into the sample runs. The coefficient of variability between replicate injections was &lt;2%. Comparisons to standards provided by Prof. D. Hansell (University of Miami) were made daily. 
+
+The Carlson DOM Analytical Lab at UC Santa Barbara analysis was done using High Temperature Combustion method on Shimadzu TOC-V or TOC-L systems. DOC and DTN were analyzed on separate runs. Information is provided with the data on internal checks such as standards and reference materials. The data were initially quality control checked by a DOM technician as well as the Carlson Lab Manager. All runs have passed system specifications, indicating the TOC instrument was analytically performing and data provided is good quality. For more details on Carlson analysis method, see https://repository.oceanbestpractices.org/handle/11329/1921. For more information on the Carlson DOM lab, see https://carlson.eemb.ucsb.edu/services.
+
+Data were received from the Kujawinski lab as Non Purgeable Organic Carbon (NPOC) and Total Nitrogen (TN). Because samples were pre-filtered through GF/F filters, NPOC and TN are operationally equivalent to dissolved organic carbon (DOC) and dissolved total nitrogen (DTN) and identified as DOC and DTN in this package. Blanks are not applied to the data. Data were received from the Carlson lab as ODC and DTN.
 
 Note: DTN values for cruises EN706 and AR77 are from a second round of sample analysis. Some samples did not have enough remaining sample volume to be re-analyzed and thus DTN values do not exist for these samples and are flagged as missing. DOC data for these cruises are from the initial analysis. 
 
@@ -158,7 +164,7 @@ We assured that the geographic and temporal coverage of the clean data table wer
 
 # Differences From Previous Versions
 
-In version 2, data from five cruises were added. A second quality flag was added to distinguish C from N quality, and both quality flags were identified as IODE primary level flags. The column previously called "date" was renamed to "date\_time\_utc". Missing value codes were updated to NaN for numeric columns and blank entries for text columns. 
+In version 3, data from four cruises were added, including for the first time samples that were analyzed by the Carlson lab. Stations that were listed as "L05" and "L07" in version 2 were corrected to "L5" and "L7", respectively, in version 3. 
 
 # Related Packages
 
@@ -286,8 +292,8 @@ Sosik, H.M., E. Crockford, and E. Peacock. 2021. Dissolved inorganic nutrients f
       <entityDescription>DOC and DTN from discrete water column samples on NES-LTER cruises</entityDescription>
       <physical>
         <objectName>nes-lter-doc-transect.csv</objectName>
-        <size unit="bytes">33942</size>
-        <authentication method="MD5">53155abfefc3a7a6a7001731f297d7d2</authentication>
+        <size unit="bytes">49461</size>
+        <authentication method="MD5">6586f34b7e8b921c584578ec1ffb3545</authentication>
         <dataFormat>
           <textFormat>
             <numHeaderLines>1</numHeaderLines>
@@ -410,7 +416,7 @@ Sosik, H.M., E. Crockford, and E. Peacock. 2021. Dissolved inorganic nutrients f
               <numericDomain>
                 <numberType>real</numberType>
                 <bounds>
-                  <minimum exclusive="false">-70.9016</minimum>
+                  <minimum exclusive="false">-70.9116</minimum>
                   <maximum exclusive="false">-70.5626</maximum>
                 </bounds>
               </numericDomain>
@@ -491,7 +497,7 @@ Sosik, H.M., E. Crockford, and E. Peacock. 2021. Dissolved inorganic nutrients f
               <numericDomain>
                 <numberType>real</numberType>
                 <bounds>
-                  <minimum exclusive="false">1.7</minimum>
+                  <minimum exclusive="false">1.3</minimum>
                   <maximum exclusive="false">107</maximum>
                 </bounds>
               </numericDomain>
@@ -617,8 +623,8 @@ Sosik, H.M., E. Crockford, and E. Peacock. 2021. Dissolved inorganic nutrients f
               <numericDomain>
                 <numberType>real</numberType>
                 <bounds>
-                  <minimum exclusive="false">0.024</minimum>
-                  <maximum exclusive="false">2.837</maximum>
+                  <minimum exclusive="false">0.025</minimum>
+                  <maximum exclusive="false">2.839</maximum>
                 </bounds>
               </numericDomain>
             </ratio>
@@ -630,7 +636,7 @@ Sosik, H.M., E. Crockford, and E. Peacock. 2021. Dissolved inorganic nutrients f
         </attribute>
         <attribute>
           <attributeName>date_analyzed</attributeName>
-          <attributeDefinition>Date of laboratory sample analysis</attributeDefinition>
+          <attributeDefinition>Date of laboratory sample analysis (Kujawinski lab) or date data received (Carlson lab)</attributeDefinition>
           <storageType>date</storageType>
           <measurementScale>
             <dateTime>
@@ -654,14 +660,14 @@ Sosik, H.M., E. Crockford, and E. Peacock. 2021. Dissolved inorganic nutrients f
           </measurementScale>
         </attribute>
       </attributeList>
-      <numberOfRecords>272</numberOfRecords>
+      <numberOfRecords>416</numberOfRecords>
     </dataTable>
   </dataset>
   <additionalMetadata>
     <metadata>
       <emlEditor>
         <app>EMLassemblyline</app>
-        <release>3.5.5</release>
+        <release>3.5.7</release>
       </emlEditor>
     </metadata>
   </additionalMetadata>

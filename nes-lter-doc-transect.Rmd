@@ -28,30 +28,35 @@ library(readr)
 Read data table
 
 ```{r}
-# output file from submodule is downloaded and _input appended to filename to allow for column modifications below
-#data_table <- read_csv(here("nes-lter-doc-transect_input.csv"), na = c("nan", "NaN", ""))
-data_table <- read_csv(here("nes-lter-doc-transect_input.csv"))
-
-# # read in and add one sample that is missing because CTD btl file does not exist
-# missing <- read.csv(here("doc-sample-missing-btl-data.csv"), na.strings = c("nan", "NaN", ""))
-# missing$comments <- as.character(missing$comments)
-# missing$date <- as.POSIXct(missing$date, tz = "UTC", format = "%Y-%m-%d %H:%M:%S")
-# missing$date_analyzed <- as.POSIXct(missing$date_analyzed)
-# 
-# data_table <- add_row(data_table, missing, .before = 194)
+# data file is downloaded and _input appended to filename to allow for column modifications
+# v3: from Taylor to allow for some manual corrections. v2: from submodule
+data_table <- read_csv(here("nes-lter-doc-transect_input.csv"), na = c("nan", "NaN", "")) # v1, v3
+#data_table <- read_csv(here("nes-lter-doc-transect_input.csv")) #v2
 
 ```
 Adjust columns to match metadata
 
 ```{r}
 
+# # used in v2 for data from python submodule
+# data_table <- data_table |> 
+#   relocate(date_analyzed, .after = distance_km) |>
+#   relocate(filename, .after = date_analyzed) |>
+#   rename(date_time_utc = date) |>
+#   rename(station_distance = distance_km) |> 
+#   replace_na(list(cast = NaN, niskin = NaN, latitude = NaN, longitude = NaN, depth = NaN, doc = NaN, dtn = NaN, distance_km = NaN)) |>
+#   replace_na(list(replicate = ""))
+
+# used in v3 for data not from python submodule:
 data_table <- data_table |> 
-  relocate(date_analyzed, .after = distance_km) |>
-  relocate(filename, .after = date_analyzed) |>
   rename(date_time_utc = date) |>
-  rename(station_distance = distance_km) |>
-  replace_na(list(cast = NaN, niskin = NaN, latitude = NaN, longitude = NaN, depth = NaN, doc = NaN, dtn = NaN, distance_km = NaN)) |>
-  replace_na(list(replicate = ""))
+  select(-temperature, -salinity, -comments) |>
+  replace_na(list(replicate = "")) |>
+  rename(iode_quality_flag_c = quality_flag_c) |>
+  rename(iode_quality_flag_n = quality_flag_n) 
+data_table$date_time_utc <- as.POSIXlt(data_table$date_time_utc, format = "%m/%d/%Y %H:%M", TZ ="UTC")
+data_table$date_analyzed <- as.POSIXlt(data_table$date_analyzed, format = "%m/%d/%Y %H:%M", TZ ="UTC")
+data_table$date_analyzed <- as.Date(data_table$date_analyzed)
 
 write.csv(data_table, "nes-lter-doc-transect.csv", na = "NaN", row.names = FALSE)
 
@@ -69,7 +74,7 @@ excel_to_template(here("nes-lter-doc-transect-info"), "nes-lter-doc-transect", r
 Generate the package and insert the parent project node into the resulting EML
 
 ```{r}
-pkg_id <- "knb-lter-nes.23.2"
+pkg_id <- "knb-lter-nes.23.3"
 
 make_eml(here(),
          dataset.title="Dissolved Organic Carbon (DOC) and Dissolved Total Nitrogen (DTN) from Northeast U.S. Shelf Long Term Ecological Research (NES-LTER) Transect cruises, ongoing since 2022",

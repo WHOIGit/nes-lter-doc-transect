@@ -30,7 +30,7 @@ Blanks: approximately 2-3 Milli-Q blanks were typically collected for each cruis
 
 # Sample Analysis
 
-Samples remained covered and were stored at ambient room temperature in the lab until they were submitted for analysis to obtain the concentration of total organic carbon (TOC) and total nitrogen (TN). From Feb 2022 through Mar 2024, samples were submitted to E. Kujawinski's lab at Woods Hole Oceanographic Institution for analysis where they were refrigerated at approximately 4 degC. From May 2024 to present, samples are shipped to the Carlson DOM Analytical Lab at UC Santa Barbara for analysis. 
+Samples remained covered and were stored at ambient room temperature in the lab until they were submitted for analysis to obtain the concentration of total organic carbon (TOC) and total nitrogen (TN). Samples collected from Feb 2022 through Mar 2024 were submitted to E. Kujawinski's lab at Woods Hole Oceanographic Institution for analysis where they were refrigerated at approximately 4 degC until analysis. From May 2024 to present, samples are shipped to the Carlson DOM Analytical Lab at UC Santa Barbara for analysis. 
 
 The Kujawinski lab at WHOI analyzed samples with a Shimadzu TOC-LCPH total organic carbon analyzer coupled to a TNM-L analyzer. Blanks (MilliQ) and standard curves with potassium hydrogen phthalate and potassium nitrate were interspersed into the sample runs. The coefficient of variability between replicate injections was <2%. Comparisons to standards provided by Prof. D. Hansell (University of Miami) were made daily. 
 
@@ -50,7 +50,7 @@ We assured that the geographic and temporal coverage of the clean data table wer
 
 # Differences From Previous Versions
 
-In version 2, data from five cruises were added. A second quality flag was added to distinguish C from N quality, and both quality flags were identified as IODE primary level flags. The column previously called "date" was renamed to "date\_time\_utc". Missing value codes were updated to NaN for numeric columns and blank entries for text columns. 
+In version 3, data from four cruises were added, including for the first time samples that were analyzed by the Carlson lab. Stations that were listed as "L05" and "L07" in version 2 were corrected to "L5" and "L7", respectively, in version 3. 
 
 # Related Packages
 
