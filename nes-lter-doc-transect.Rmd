@@ -1,7 +1,7 @@
 ---
 title: "Dissolved Organic Carbon and Dissolved Total Nitrogen"
 author: "Joe Futrelle, Kate Morkeski"
-date: "2024-06-03"
+date: "2026-06-04"
 output:
   html_document:
     df_print: paged
@@ -28,26 +28,14 @@ library(readr)
 Read data table
 
 ```{r}
-# data file is downloaded and _input appended to filename to allow for column modifications
-# v3: from Taylor to allow for some manual corrections. v2: from submodule
-data_table <- read_csv(here("nes-lter-doc-transect_input.csv"), na = c("nan", "NaN", "")) # v1, v3
-#data_table <- read_csv(here("nes-lter-doc-transect_input.csv")) #v2
+
+data_table <- read_csv(here("nes-lter-doc-transect_input.csv"), na = c("nan", "NaN", "")) 
 
 ```
 Adjust columns to match metadata
 
 ```{r}
 
-# # used in v2 for data from python submodule
-# data_table <- data_table |> 
-#   relocate(date_analyzed, .after = distance_km) |>
-#   relocate(filename, .after = date_analyzed) |>
-#   rename(date_time_utc = date) |>
-#   rename(station_distance = distance_km) |> 
-#   replace_na(list(cast = NaN, niskin = NaN, latitude = NaN, longitude = NaN, depth = NaN, doc = NaN, dtn = NaN, distance_km = NaN)) |>
-#   replace_na(list(replicate = ""))
-
-# used in v3 for data not from python submodule:
 data_table <- data_table |> 
   rename(date_time_utc = date) |>
   select(-temperature, -salinity, -comments) |>
@@ -57,6 +45,8 @@ data_table <- data_table |>
 data_table$date_time_utc <- as.POSIXlt(data_table$date_time_utc, format = "%m/%d/%Y %H:%M", TZ ="UTC")
 data_table$date_analyzed <- as.POSIXlt(data_table$date_analyzed, format = "%m/%d/%Y %H:%M", TZ ="UTC")
 data_table$date_analyzed <- as.Date(data_table$date_analyzed)
+
+data_table$nearest_station <- replace(data_table$nearest_station, data_table$nearest_station == "MVCO-ASIT", "MVCO") 
 
 write.csv(data_table, "nes-lter-doc-transect.csv", na = "NaN", row.names = FALSE)
 
@@ -74,7 +64,7 @@ excel_to_template(here("nes-lter-doc-transect-info"), "nes-lter-doc-transect", r
 Generate the package and insert the parent project node into the resulting EML
 
 ```{r}
-pkg_id <- "knb-lter-nes.23.3"
+pkg_id <- "knb-lter-nes.23.4"
 
 make_eml(here(),
          dataset.title="Dissolved Organic Carbon (DOC) and Dissolved Total Nitrogen (DTN) from Northeast U.S. Shelf Long Term Ecological Research (NES-LTER) Transect cruises, ongoing since 2022",
